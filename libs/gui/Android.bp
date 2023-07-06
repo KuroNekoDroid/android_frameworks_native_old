@@ -252,6 +252,10 @@ cc_defaults {
         "libpdx_headers",
     ],
 
+    cflags: [
+        "-Ofast",
+    ],
+
     afdo: true,
 
     lto: {
@@ -316,6 +320,7 @@ cc_defaults {
     cflags: [
         "-Wall",
         "-Werror",
+        "-Ofast",
     ],
 
     cppflags: [
