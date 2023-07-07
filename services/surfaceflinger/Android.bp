@@ -19,6 +19,7 @@ cc_defaults {
         "-Wunreachable-code",
         "-Wconversion",
         "-Ofast",
+        "-Wno-unused-lambda-capture",
     ],
 }
 
