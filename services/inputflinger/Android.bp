@@ -38,7 +38,12 @@ cc_defaults {
         "-Wshadow",
         "-Wshadow-field-in-constructor-modified",
         "-Wshadow-uncaptured-local",
-        "-Ofast",
+        "-O3",
+        "-fdata-sections",
+        "-ffunction-sections",
+        "-finline-functions",
+        "-ftree-vectorize",
+        "-funroll-loops",
     ],
     sanitize: {
         misc_undefined: ["bounds"],

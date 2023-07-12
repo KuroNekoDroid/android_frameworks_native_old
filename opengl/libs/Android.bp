@@ -12,7 +12,16 @@ cc_library {
     name: "libETC1",
     srcs: ["ETC1/etc1.cpp"],
     host_supported: true,
-    cflags: ["-Wall", "-Werror", "-Ofast"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-O3",
+        "-fdata-sections",
+        "-ffunction-sections",
+        "-finline-functions",
+        "-ftree-vectorize",
+        "-funroll-loops",
+    ],
 
     target: {
         android: {
@@ -69,7 +78,12 @@ cc_defaults {
         "-Wall",
         "-Werror",
         "-Wno-unused-variable",
-        "-Ofast",
+        "-O3",
+        "-fdata-sections",
+        "-ffunction-sections",
+        "-finline-functions",
+        "-ftree-vectorize",
+        "-funroll-loops",
     ],
     shared_libs: [
         // ***** DO NOT ADD NEW DEPENDENCIES HERE *****
@@ -103,7 +117,12 @@ cc_defaults {
         "-Wno-error=deprecated-register",
         "-Wno-error=unknown-attributes",
         "-Wno-unused-variable",
-        "-Ofast",
+        "-O3",
+        "-fdata-sections",
+        "-ffunction-sections",
+        "-finline-functions",
+        "-ftree-vectorize",
+        "-funroll-loops",
     ],
     shared_libs: [
         // ***** DO NOT ADD NEW DEPENDENCIES HERE *****
