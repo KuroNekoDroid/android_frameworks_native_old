@@ -33,7 +33,12 @@ cc_library_shared {
     cflags: [
         "-Wall",
         "-Werror",
-        "-Ofast",
+        "-O3",
+        "-fdata-sections",
+        "-ffunction-sections",
+        "-finline-functions",
+        "-ftree-vectorize",
+        "-funroll-loops",
     ],
 
     shared_libs: [
