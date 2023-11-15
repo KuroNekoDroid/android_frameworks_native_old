@@ -149,9 +149,10 @@ public:
 
     bool hasSolidColorLayers() const;
 
-private:
-    CachedSet() = default;
+    // True if any layer in this cached set has CachingHint::Disabled
+    bool cachingHintExcludesLayers() const;
 
+private:
     const NonBufferHash mFingerprint;
     std::chrono::steady_clock::time_point mLastUpdate = std::chrono::steady_clock::now();
     std::vector<Layer> mLayers;
