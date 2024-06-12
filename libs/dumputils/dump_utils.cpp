@@ -32,6 +32,7 @@ static const char* native_processes_to_dump[] = {
         "/system/bin/drmserver",
         "/system/bin/mediadrmserver",
         "/system/bin/mediaextractor", // media.extractor
+        "/system/bin/mediametrics", // media.metrics
         "/system/bin/mediaserver",
         "/system/bin/mediatranscoding", // media.transcoding
         "/system/bin/netd",
