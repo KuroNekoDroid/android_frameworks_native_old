@@ -84,7 +84,15 @@ cc_defaults {
         "-finline-functions",
         "-ftree-vectorize",
         "-funroll-loops",
+        "-ffinite-math-only",
+        "-freciprocal-math",
+        "-fcf-protection=none",
+        "-fno-trapping-math",
+        "-fno-math-errno",
+        "-fcf-protection=none",
+        "-ffp-contract=fast",
     ],
+    whole_program_vtables: true,
     shared_libs: [
         // ***** DO NOT ADD NEW DEPENDENCIES HERE *****
         // In particular, DO NOT add libutils or anything "above" libcutils
@@ -123,7 +131,15 @@ cc_defaults {
         "-finline-functions",
         "-ftree-vectorize",
         "-funroll-loops",
+        "-ffinite-math-only",
+        "-freciprocal-math",
+        "-fcf-protection=none",
+        "-fno-trapping-math",
+        "-fno-math-errno",
+        "-fcf-protection=none",
+        "-ffp-contract=fast",
     ],
+    whole_program_vtables: true,
     shared_libs: [
         // ***** DO NOT ADD NEW DEPENDENCIES HERE *****
         // In particular, DO NOT add libutils nor anything "above" libui
