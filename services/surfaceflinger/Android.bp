@@ -25,20 +25,7 @@ cc_defaults {
         "-ftree-vectorize",
         "-funroll-loops",
         "-Wno-unused-lambda-capture",
-        "-Wno-unused-private-field",
-		"-ffinite-math-only",
-		"-freciprocal-math",
-		"-fcf-protection=none",
-		"-fno-trapping-math",
-		"-fno-math-errno",
-		"-fcf-protection=none",
-		"-ffp-contract=fast",
     ],
-    whole_program_vtables: true,
-    ldflags: [
-    "-Wl,-mllvm,-inline-threshold=2000",
-    "-Wl,-mllvm,-inlinehint-threshold=1200",
-    ]
 }
 
 cc_defaults {
